@@ -22,6 +22,7 @@ struct TransactionListView: View {
                                         isPinned: self.vm.isPinned(tid: transaction.id),
                                         buttonCallback: self.vm.receiveValue(tid:))
                     }
+                    Spacer().frame(height: 80)
                 }
                 .animation(.easeIn)
                 .listStyle(PlainListStyle())
